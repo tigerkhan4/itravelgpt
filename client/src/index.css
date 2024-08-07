@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: #ede6e0;
+  color: white;
+  font-family: "Inder", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color-scheme: light;
+  background-color: #efe8e2; 
+}

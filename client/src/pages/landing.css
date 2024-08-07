@@ -1,0 +1,80 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------quick links */
+.links {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+.links .T {
+    padding-left: 30px;
+}
+.links .N {
+    padding-left: 30px;
+}
+
+/* -------navbar alignment */
+
+.dropdown-menu {
+    position: relative;
+  }
+  
+  .menu-trigger {
+    cursor: pointer;
+  }
+  
+  .menu {
+    display: none; /* Position the menu absolutely */
+    position: absolute;
+    top: 100%; /* Position the menu below the trigger element */
+    right: 0; /* Align the menu to the right */
+    background-color: #efe8e2;
+    border: 3px solid #70a1bb; /* Add border to the menu */
+    border-radius: 10px;
+    list-style: none; /* Remove default list styles */
+    padding: 10px; /*Remove default padding*/
+    margin: 0; /* Remove default margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Add shadow for better visibility*/
+    z-index: 1000; /* Ensure the menu is above other content */
+  }
+  
+  .menu li {
+    padding: 5px; /*Add padding to the menu items*/
+  }
+
+  .menu.open {
+    display: block;
+  }
+  
+
+/* screenshot borders */
+.body .explore, .itinerary, .mytravelbuddy {
+  border-style: solid;
+  padding: 20px;
+  border-radius: 30px;
+  border-color: #70a1bb;
+  border-width: 5px;
+}
+.body .dashboard {
+  border-style: solid;
+  padding: 20px;
+  border-radius: 30px;
+  border-color: #70a1bb;
+  border-width: 5px;
+}
+/* -------signup button */
+
+/* -------footer styling */
+.footer {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: gray;
+}
