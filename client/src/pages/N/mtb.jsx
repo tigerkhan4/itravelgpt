@@ -30,7 +30,7 @@ function MTB() {
   // Function to fetch bot response from the server
   const fetchBotResponse = async () => {
     try {
-      const { data } = await axios.post("http://localhost:4000", { input }, {
+      const { data } = await axios.post(import.meta.env.VITE_API_URL, { input }, {
         headers: {
           "Content-Type": "application/json",
         },
