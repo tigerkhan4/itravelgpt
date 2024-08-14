@@ -60,8 +60,8 @@ app.post("/", async (req, res) => {
         });
     } catch (err) {
         console.log("FAILED: ", req.body.input);
-        console.error(err);
-        res.status(500).send(err);
+        console.error(err.response.data);
+        res.status(500).send(err.response.data);
     }
 });
 
